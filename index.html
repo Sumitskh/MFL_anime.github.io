@@ -14,16 +14,18 @@
 <body>
     <!-- Header -->
     <header id="header">
-        <nav class="navbar flex">
+        <nav class="navbar">
             <h2 class="logo">MFL</h2>
             <ul class="list flex jcenter aicenter" id="list">
                 <li id="activepage"> <a href="#">HOME</a></li>
                 <li><a href="#">LIST</a></li>
                 <li><a href="#">NEWS</a></li>
                 <li><a href="#">ABOUT</a></li>
-
             </ul>
-        </nav>
+            <div class="hamCros" onclick="myburger()">
+                <img id="burger" src="images/bars-solid.svg" alt="bars-solid">
+                <img id="cross" src="images/times-solid.svg" alt="times-solid">
+            </div>
     </header>
     <!-- End of Header -->
     <!-- MainBody Start -->
@@ -31,8 +33,8 @@
         <div class="section1">
             <article>
                 <div class="content-wrapper">
-                    <div class="latest-releases">
-                        <h2>Latest Releases</h2>
+                    <div class="latest-uploads">
+                        <h2>Latest Uploads</h2>
                         <div class="episode-list-wrapper">
                             <div class="episode-list row">
                                 <div class="episode-wrap col-12 col-sm-4" data-id="12">
@@ -390,6 +392,7 @@
         </div>
     </footer>
     <!-- Footer End -->
+    <script src="script/script.js"></script>
     <script src="script/live_clock.js"></script>
 </body>
 

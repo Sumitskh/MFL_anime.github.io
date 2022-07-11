@@ -27,6 +27,7 @@ body{
 .navbar{
     background-color: inherit;
     height: fit-content;
+    display: flex;
 }
 .logo{
     color: var(--white1);
@@ -53,10 +54,27 @@ body{
     color: #000;
     background-color: #fff;
 }
+.hamCros{
+    display: none;
+}
 /*************************************** Section 1 */
 
 .section1{
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col-sm-4{
+    flex: 0 0 33.333333%;
+    max-width: 24.333333%;
 }
 .content-wrapper{
     position: relative;
@@ -66,13 +84,13 @@ body{
     -moz-transition: opacity .75s ease-out;
     transition: opacity .75s ease-out;
 }
-.latest-releases{
+.latest-uploads{
     position: relative;
     max-width: 1100px;
     min-height: 240px;
     margin: 25px auto 20px;
 }
-.latest-releases h2{
+.latest-uploads h2{
     margin-bottom: 15px;
     font-weight: 300;
 }
@@ -339,4 +357,59 @@ footer {
 
 .copyRight p {
     color: white;
+}
+
+/* Responsive index */
+@media only screen and (max-width: 880px) {
+    .col-sm-4{
+        max-width: 33.333333%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .snap{
+        max-height: 16em;
+    }
+    #list{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+    .list li {
+        padding: 12px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar{
+        display: block;
+    }
+    .hamCros{
+        display: block;
+        filter: invert();
+        width: 33px;
+        top: 10px;
+        right: 30px;
+        position: absolute;
+    }
+    #burger{
+        display: block;
+    }
+    #cross{
+        display: none;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .snap{
+        max-height: 14em;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .snap{
+        max-height: 12em;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .snap{
+        max-height: 9em;
+    }
 }
