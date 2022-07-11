@@ -1,0 +1,29 @@
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.jspacebw{
+    justify-content: space-between;
+}
+.jcenter{
+    justify-content: center!important;
+}
+.aicenter{
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col-sm-4{
+    flex: 0 0 33.333333%;
+    max-width: 24.333333%;
+}
