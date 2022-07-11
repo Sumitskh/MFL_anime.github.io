@@ -402,14 +402,34 @@ footer {
     .snap{
         max-height: 14em;
     }
+    .episode-number{
+        font-size: 0.7rem;
+    }
+    footer {
+        font-size: 84%;
+    }
 }
 @media only screen and (max-width: 460px) {
     .snap{
         max-height: 12em;
     }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
     .snap{
         max-height: 9em;
+    }
+    footer {
+        font-size: 100%;
+    }
+
+    .footerPart1 {
+        margin-top: 30px;
+        padding-bottom: 12px;
+        flex-direction: column;
+    }
+
+    .fpart1a {
+        padding-bottom: 5px;
+        justify-content: space-around;
     }
 }
