@@ -137,8 +137,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     flex: 1 1 auto;
-    padding: 14px 15px;
-    font-size: .75rem;
+    padding: 13px 0px;
+    font-size: .65rem;
     text-shadow: 0 1px 1px rgb(0 0 0 / 50%);
     line-height: normal;
     align-self: flex-end;
