@@ -1,62 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Bebas+Neue&family=Hurricane&family=Red+Hat+Mono&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-:root {
-    --red1: #ff4d4d;
-    --red2: #ea5353;
-    --blue1: #0066ff;
-    --white1: #fff;
-    --black: #000;
-    --dark_grey: rgb(43, 43, 43);
-    --light_yellow: #e7dba3;
-}
-
-body{
-    background-color: var(--dark_grey);
-    color: var(--white1);
-}
-#header{
-    width: 100%;
-    background-color: var(--black);
-}
-.navbar{
-    background-color: inherit;
-    height: fit-content;
-    display: flex;
-}
-.logo{
-    color: var(--white1);
-    margin: 2px 30px;
-    font-size: 38px;
-    font-family: 'Hurricane', cursive;
-}
-.list{
-    list-style-type: none;
-    margin-left: 5px;
-}
-#activepage a{
-    color: #000;
-    background-color: #fff;
-}
-.list li a{
-    color: var(--white1);
-    padding: 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-right: 2px;
-}
-.list li a:hover{
-    color: #000;
-    background-color: #fff;
-}
-.hamCros{
-    display: none;
-}
 /*************************************** Section 1 */
 
 .section1{
@@ -107,6 +49,7 @@ body{
 .episode{
     position: relative;
     overflow: hidden;
+    cursor: pointer;
     z-index: 9;
     background-color: inherit;
     -webkit-touch-callout: none;
@@ -155,12 +98,32 @@ body{
 .edit-snapshot:hover{
     display: flex;
 }
+.episode-rating{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+    background-color: rgba(0, 0, 0, 0.151);
+}
+.ratingImg{
+    width: 10%;
+    margin-right: 3px;
+}
+.epRating{
+    font-weight: 500;
+    color: white;
+}
 .episode-label-wrap{
     position: absolute;
     width: 100%;
     bottom: 0;
     z-index: 2;
     pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.151);
 }
 .episode-label{
     display: -webkit-flex;
@@ -370,9 +333,12 @@ footer {
         max-height: 16em;
     }
     #list{
-        display: none;
+        /* display: none; */
+        height: 0;
+        overflow: hidden;
         width: 100%;
         flex-direction: column;
+        transition: 0.5s ease-in-out ;
     }
     .list li {
         padding: 12px 0px;

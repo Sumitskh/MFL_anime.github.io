@@ -1,0 +1,1 @@
+console.log("card 12 loaded sucessfully");

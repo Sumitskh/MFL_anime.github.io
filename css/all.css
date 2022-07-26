@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Bebas+Neue&family=Hurricane&family=Red+Hat+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --red1: #ff4d4d;
+    --red2: #ea5353;
+    --blue1: #0066ff;
+    --white1: #fff;
+    --black: #000;
+    --dark_grey: rgb(43, 43, 43);
+    --light_yellow: #e7dba3;
+}
+
+body{
+    background-color: var(--dark_grey);
+    color: var(--white1);
+}
+
+#header{
+    width: 100%;
+    background-color: var(--black);
+}
+.navbar{
+    background-color: inherit;
+    height: fit-content;
+    display: flex;
+}
+.logo{
+    color: var(--white1);
+    margin: 2px 30px;
+    font-size: 38px;
+    font-family: 'Hurricane', cursive;
+}
+.list{
+    list-style-type: none;
+    margin-left: 5px;
+}
+#activepage a{
+    color: #000;
+    background-color: #fff;
+}
+.list li a{
+    color: var(--white1);
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 2px;
+}
+.list li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+.hamCros{
+    display: none;
+}

@@ -6,13 +6,14 @@ function myburger(){
     let cross = document.getElementById("cross");
   
     // console.log(list);
-    if(list.style.display === "flex"){
-      list.style.display = "none";
+    if(list.style.height === "250px"){
+      list.style.height = "0";
       burger.style.display = "block";
       cross.style.display = "none";
     } else{
-      list.style.display = "flex";
+      list.style.height = "250px";
       burger.style.display = "none";
       cross.style.display = "block";
     }
-  }
+  };
+  // ----------------------------------------------------------------
